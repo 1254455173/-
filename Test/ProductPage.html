@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./jquery.min.js"></script>
+    <script src="./test.js"></script>
+    <script src="./magnifier.js"></script>
+    <script src="./buttonChange.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="./styleListPage.css">
+    <link rel="stylesheet" type="text/css" href="./styleProductPage.css">
+</head>
+<body>
+<!--背景-->
+<div id="container">
+    <!--上-->
+    <div id="head">
+        <div>
+            <div id="hLeft" class="f">
+                <div style="width: 40px; height: 40px;line-height: 65px;position: absolute; top: 14px;">
+                    <img src="./imges/logo.png" style="width: 40px; height: 40px;">
+                </div>
+                <div id="grey">
+                    十七商铺
+                </div>
+                <div id="red">
+                    十七商铺
+                </div>
+            </div>
+
+            <div id="hMiddle" class="f">
+                您好，欢迎来到十七商铺！想继续购物？<a href="./UserLogin.html">[请登录]</a>，新用户？<a href="./UserRegister.html">[免费注册]</a>
+            </div>
+
+            <div id="hRight" class="f">
+                <div class="f" style="width=360px;height: 20px;">
+                    <ul style="margin: 0px; padding: 0px;">
+                        <li><a href="#">帮助中心 |</a></li>
+                        <li><a href="#">客户反馈 |</a></li>
+                        <li><a href="#">网站地图 |</a></li>
+                        <li><a href="#">加入收藏 |</a></li>
+                        <li>2020/3/14/星期六</li>
+                    </ul>
+                </div>
+                <div class="f" style="width:335px;">
+                    <div style="position: absolute; text-indent: 30px;">
+                    <img src="./imges/laba.png">
+                    </div>
+                    <marquee direction="up" scrollamount="2px" width="335px" hspace="50px">
+                        访十七商铺最强大的升级了，感谢用户支持与信任<br>
+                        访十七商铺最强大的升级了，感谢用户支持与信任<br>
+                    </marquee>
+                </div>
+            </div>
+        </div>
+        <div id="nav">
+            <div id="topNav">
+                    <ul style="margin: 0px; padding: 0px;">
+                        <li><a href="./FirstPage.html" style="color: white">网站首页 |</a></li>
+                        <li><a href="./UserLogin.html" style="color: white">用户登录 |</a></li>
+                        <li><a href="./UserRegister.html" style="color: white">用户注册 |</a></li>
+                        <li><a href="./ProductPage.html" style="color: white">产品页面|</a></li>
+                        <li><a href="./ShoppingCar.html" style="color: white">购物车页面 |</a></li>
+                        <li><a href="./ListPage.html" style="color: white">产品列表 |</a></li>
+                        <li><a href="./PricePage.html" style="color: white">报价单</a></li>
+
+                    </ul>
+            </div>
+            <div id="bottomNav" style="line-height: 25px;line-height: 25px;position: relative;">
+                <span style="color: white;" id="bNLeft">商品搜索：&nbsp;<select style="width:100px;margin: 0px; padding: 0px;"><option>所有分类</option><option>所有分类</option><option>所有分类</option></select></span>&nbsp;
+                <span id="bNMiddle"><input type="text" maxlength="50px" size="40px;" style="margin: 0px; padding: 0px; vertical-align: top">&nbsp;&nbsp;<input type="button" value="搜索"><span>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"">高级/组合搜索</a></span> </span>
+                <div id="bNRight" style="background-image: url(./imges/d3.jpg); width:300px;position: absolute; height: 23px;display: inline-block; right: 10px;">
+                    <span style="position: absolute;right: 180px"><a href="./ShoppingCar.html" style="color: black">购物车暂时为空</a></span>
+                    <span style="position: absolute;right: 80px;"><a href="./ShoppingCar.html" style="color: black"> 去结算</a></span>
+                    <span style="position: absolute;right: 0px;"><a href="#" style="color: black">用户中心</a></span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--中-->
+    <div id="middle">
+        <!--中左-->
+        <div id="mLeft" class="f">
+            <div id="userInfo" class="lanMu">
+                <h4>用户信息</h4>
+                <div id="userInfoB" class="userInfoB">
+                    <ul>
+                        <li><img src="./imges/1.gif">&nbsp;&nbsp;<a href="./UserRegister.html" style="color: grey;">注册</a><a href="./UserLogin.html">/登录</a></li>
+                        <li><img src="./imges/8.gif">&nbsp;&nbsp;<a href="./ShoppingCar.html" style="color: grey;">购物车（0）</a></li>
+                        <li><img src="./imges/10.gif">&nbsp;&nbsp;<a href="#" style="color: grey;">对比框（0）</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!--最近浏览产品-->
+            <div id="classifyRC" style="border: solid 1px #e34542;width:195px;height: margin-bottom: 5px;overflow:hidden;">
+                <h4>最近浏览产品</h4>
+                <div>
+                    <ul style="list-style: none;display: inline-block;">
+                        <li style="list-style: none; position: relative;">
+                            <div style="float: left;width: 80px; height: 100px; line-height: 120px; text-align: center;">
+                                <a href="#"><img style="width:50px; height: 50px;" src="./imges/p4.jpg"></a>
+                            </div>
+
+                            <div style="float: left;">
+                                <a href="#">
+                                    <div id="introduce" style="width: 100px; height: 100px;font-size: 13px; color: grey;">创维（Skyworth）32英寸液晶电视32L05HR（内置底座)<br>
+                                        <span style="color:#d6290b; font-weight:bold">￥2599.00元</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <!--中右-->
+        <div id="listMRight">
+            <div id="listTop"><img src="./imges/arrow.png">您的位置：<a href="./FirstPage.html">首页 >> 家用电器 >> 生活电器
+                >></a>
+                <span>霍尼韦尔（Honeywell）5010-CHN空气净化器</span>
+            </div>
+
+            <div id="showInfo">
+                <div class="left" id="detailImage">
+                    <div id="bigImg">
+                        <img src="./imges/p4.jpg">
+                    </div>
+                    <div  id="smallImg">
+                        <img src="./imges/p4.jpg">
+                        <img src="./imges/p1.jpg">
+                        <img src="./imges/p2.jpg">
+                        <img src="./imges/p3.jpg" style="border-right: none;">
+                    </div>
+
+                </div>
+                <div class="left" id="detailBuy">
+                    <div id="detailBigArea">
+                        <img src="./imges/p4.jpg">
+                    </div>
+                    <div>霍尼韦尔（Honeywell）5010-CHN空气净化器</div>
+                    <div>
+                        商品编号：10042710521400
+                    </div>
+                    <div>
+                        商品积分：<span class="r">1298</span><a href="#">（积分可兑换优惠劵）</a>
+                    </div>
+                    <div style="margin-top: 10px;color:grey">
+                        市场价格：<span style="text-decoration: line-through">￥1998.00元</span>
+                    </div>
+                    <div>
+                        本站价格：<span class="b r">￥1298.00元</span>
+                    </div>
+                    <div>
+                        为您节省：<span class="b r">￥700.00元</span>
+                    </div>
+                    <div>
+                        定购数量：<input type="text" value="1">
+                    </div>
+                    <div>
+                        <a href="#"><img src="./imges/buy.gif"></a>
+                        <a href="#"><img src="./imges/duibi.gif"></a>
+                        <a href="#"><img src="./imges/shoucang.gif"></a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div id="nextItem">
+                <div class="left">
+                    <span class="b">下一个商品：</span>
+                    <a href="#">美的（midea）电脑版电压力锅PCS507一锅双胆</a>
+                </div>
+                <div class="right">
+                    <a href="#"><img src="./imges/alipay_buy.gif"></a>
+                    <a href="#"><img src="./imges/paypal_buy.gif"></a>
+                </div>
+            </div>
+
+            <div id="showDetail">
+                <div id="navigation">
+                    <a href="#">详细说明</a>
+                    <a href="#">相关说明</a>
+                    <a href="#">商品评论</a>
+                    <a href="#">付款方式</a>
+                    <a href="#">送过货方式</a>
+                </div>
+                <div id="detailDescribe">
+                    <div class="words">
+                        不知道不知道不知道不知道不知道不知道不知道不知道不知道不知道不知道不知道不知道
+                    </div>
+                    <div class="words">
+                        你猜猜你猜猜你猜猜你猜猜你猜猜你猜猜你猜猜你猜猜你猜猜你猜猜你猜猜你猜猜你猜猜你猜猜你猜猜你猜猜你猜猜
+                    </div>
+                    <div class="words">
+                        这个嘛这个嘛这个嘛这个嘛这个嘛这个嘛这个嘛这个嘛这个嘛这个嘛这个嘛这个嘛这个嘛这个嘛这个嘛这个嘛这个嘛
+                    </div>
+                    <div class="words">
+                        我真的不知道我真的不知道我真的不知道我真的不知道我真的不知道我真的不知道我真的不知道我真的不知道我真的不知道我真的不知道
+                    </div>
+                    <div class="words">
+                        别闹了别闹了别闹了别闹了别闹了别闹了别闹了别闹了别闹了别闹了别闹了别闹了别闹了别闹了别闹了别闹了别闹了别闹了
+                    </div>
+                    <div class="words">
+                        哎呀呀哎呀呀哎呀呀哎呀呀哎呀呀哎呀呀哎呀呀哎呀呀哎呀呀哎呀呀哎呀呀哎呀呀哎呀呀哎呀呀哎呀呀哎呀呀哎呀呀哎呀呀哎呀呀
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <!--下-->
+    <div id="foot">
+        <div id="foot-top" style="border: solid 1px #e34542;margin-bottom: 5px;">
+            <div>
+                <h5>关于我们</h5>
+                <ul>
+                    <li><a href="#"><img src="./imges/dot.gif">发展历程</a></li>
+                    <li><a href="#"><img src="./imges/dot.gif">联系方式</a></li>
+                    <li><a href="#"><img src="./imges/dot.gif">公司介绍</a></li>
+                    <li><a href="#"><img src="./imges/dot.gif">企业文化</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5>付款方式</h5>
+                <ul>
+                    <li><a href="#"><img src="./imges/dot.gif">银行汇款</a></li>
+                    <li><a href="#"><img src="./imges/dot.gif">在线支付</a></li>
+                    <li><a href="#"><img src="./imges/dot.gif">银行汇款</a></li>
+                    <li><a href="#"><img src="./imges/dot.gif">公司转账</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5>送货方式</h5>
+                <ul>
+                    <li><a href="#"><img src="./imges/dot.gif">上门自提</a></li>
+                    <li><a href="#"><img src="./imges/dot.gif">EMS快递</a></li>
+                    <li><a href="#"><img src="./imges/dot.gif">快递发放</a></li>
+                    <li><a href="#"><img src="./imges/dot.gif">平邮发货</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5>售后服务</h5>
+                <ul>
+                    <li><a href="#"><img src="./imges/dot.gif">质保承诺</a></li>
+                    <li><a href="#"><img src="./imges/dot.gif">退换货政策</a></li>
+                    <li><a href="#"><img src="./imges/dot.gif">价格保护</a></li>
+                    <li><a href="#"><img src="./imges/dot.gif">返修申请</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5>购物帮助</h5>
+                <ul>
+                    <li><a href="#"><img src="./imges/dot.gif">用户等级</a></li>
+                    <li><a href="#"><img src="./imges/dot.gif">积分获得与使用</a></li>
+                    <li><a href="#"><img src="./imges/dot.gif">购物流程</a></li>
+                    <li><a href="#"><img src="./imges/dot.gif">常见问题</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div id="foot-bottom">
+            <div>
+                <ul>
+                    <li>
+                        <a href="#">淘宝店</a>
+                    </li>
+                    <li>
+                        <a href="#">易趣店</a>
+                    </li>
+                    <li>
+                        <a href="#">拍拍店</a>
+                    </li>
+                    <li>
+                        <a href="#">有啊店</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div style="color: #000000; font-size: 13px;">
+                Copyright 2015 <a href="127.0.0.1">127.0.0.1.</a>
+                All Rights Reserved 版权所有： 广州网软志成信息科技有限公司<br>
+                客户服务热线：020-34506590 &nbsp;&nbsp; 传真：020-1323512<br>
+                客户服务邮箱：<a href="#">webmaster@wrzc.net粤ICP备0123412号 管理进入</a>
+            </div>
+
+            <div style="color: #a5846c; font-size: 13px;">
+                总部地址：广州市天河区软件产业基地8栋 &nbsp;&nbsp;联系电话：020-12341234 412342134 1234234 54234534 1947515<br>
+                客服QQ:145134513<img src="./imges/chat.png" style="width: 60px; height: 15px;">1235215<img src="./imges/chat.png" style="width: 60px; height: 15px;">1514531455<img src="./imges/chat.png" style="width: 60px; height: 15px;"><br>
+                客服QQ:145972623<img src="./imges/chat.png" style="width: 60px; height: 15px;">947296234<img src="./imges/chat.png" style="width: 60px; height: 15px;"><br>
+                E-mail:webmaster@wrzc.net MSN:wrtxcn@hotmail.com
+                Copright(c)2000-2020 www.wrzc.net 广州网软志成 版权所有<a href="#">后台管理入口</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

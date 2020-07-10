@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./jquery.min.js"></script>
+    <script src="./test.js"></script>
+    <style>
+        #show{
+            width: 580px;
+            height: 140px;
+        }
+        #imgs{
+            position: relative;
+            width: 580px;
+            height: 120px;
+            overflow: hidden;
+        }
+        img{
+            width: 580px;
+            height: 120px;
+            display: none;
+
+        }
+        #left{
+            float: left;
+            width: 380px;
+            height: 20px;
+            background-color: #f6f7f9;
+        }
+        #right a{
+            float: left;
+            display: inline-block;
+            text-decoration: none;
+            background-color:#cccccc;
+            color: black;
+            font-size: 13px;
+            padding: 1px;
+            width: 20px;
+            height: 15px;
+            text-align: center;
+        }
+        #right a:hover{
+            background-color: red;
+        }
+        #right a.active{
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+<div id="show">
+    <div id="imgs">
+        <a href="#"><img id="p1" src="./imges/p1.jpg" alt="这是一个打印机" ></a>
+        <a href="#"><img id="p2" src="./imges/p2.jpg" alt="这是一台电脑" ></a>
+        <a href="#"><img id="p3" src="./imges/p3.jpg" alt="这是一瓶bb霜" ></a>
+        <a href="#"><img id="p4" src="./imges/p4.jpg" alt="这是一台电视" ></a>
+        <a href="#"><img id="p5" src="./imges/p5.jpg" alt="这是一瓶膏药" ></a>
+    </div>
+    <div id="left"></div>
+    <div id="right">
+        <table>
+            <tr>
+                <td><a id="b1" href="#" onmouseover="changeImg(0)" onmouseout="restart(0)">1</a></td>
+                <td><a id="b2" href="#" onmouseover="changeImg(1)" onmouseout="restart(1)">2</a></td>
+                <td><a id="b3" href="#" onmouseover="changeImg(2)" onmouseout="restart(2)">3</a></td>
+                <td><a id="b4" href="#" onmouseover="changeImg(3)" onmouseout="restart(3)">4</a></td>
+                <td><a id="b5" href="#" onmouseover="changeImg(4)" onmouseout="restart(4)">5</a></td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+/* 购物车页面*/
+.blue{
+    color: blue;
+}
+.bold{
+    font-weight: bold;
+}
+
+.red{
+    color: red;
+}
+#listMiddle{
+    width: 770px;
+    font-size: 10px;
+}
+#listMiddle table{
+    width: 770px;
+
+}
+#listMiddle table tr td{
+    text-align: center;
+}
+#listMiddle input{
+    font-size: 10px;
+}
+#listMiddle div{
+    margin-top: 10px;
+    display: block;
+    text-align: right;
+}
+#lastButton{
+    margin-right: 35px;
+}
+
+/* 结账页面*/
+#settlePage{
+    width: 780px;
+    height: 730px;
+    display: none;
+    font-size: 10px;
+}
+.smallTitle{
+    background-color: #fbf4ff;
+    text-align: center;
+    margin: 2px auto;
+}
+.center{
+    text-align: center;
+}
+#settlePage table{
+    margin: 0px auto;
+}
+#settlePage table td{
+    vertical-align: top;
+}
+textLeft{
+    text-align: left;
+}

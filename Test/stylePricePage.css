@@ -1,0 +1,31 @@
+.bold{
+    font-weight: bold;
+}
+.red{
+    color: red;
+}
+.black{
+    color: black;
+}
+.center{
+    text-align: center;
+}
+#middle{
+    font-size: 13px;
+}
+#printPricePage{
+    text-align: right;
+    margin: 5px auto;
+}
+#title{
+    background-color: #fcf5ff;
+}
+#listInfo table{
+    width: 980px;
+}
+#navigation td{
+    border-left: white 1px solid;
+}
+#jump{
+    background-color:#faf2ff;
+}

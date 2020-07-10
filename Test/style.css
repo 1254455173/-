@@ -1,0 +1,413 @@
+body,h4,h5, ul,li,table, tr, td, span{
+            margin: 0px;
+            padding: 0px;
+        }
+        .g{
+            color = grey;
+        }
+        /*div{
+            border: black solid 1px;
+        }*/
+        #container{
+            margin: 0px auto;
+            width: 980px;
+        }
+        #head{
+            font-size: 12px;
+            height: 130px;
+        }
+
+        a{
+            text-decoration: none;
+            color: grey;
+        }
+        #userInfo #userInfoB ul li a{
+            color: grey;
+
+        }
+        #hLeft{
+            height: 65px;
+            width: 220px;
+            position: relative;
+            font-family: "STKaiti";
+        }
+        #hLeft #grey{
+            color: lightgrey;
+            font-size: 40px;
+            line-height: 65px;
+            float: right;
+            margin-right: 10px;
+            font-weight: 1000;
+        }
+        #hLeft #red{
+            top: 1px;
+            right: 7px;
+            position: absolute;
+            color: #cc0000;
+            font-size: 40px;
+            line-height: 65px;
+            float: right;
+            font-weight: 1000;
+
+        }
+        #hMiddle{
+            line-height: 65px;
+            width: 390px;
+        }
+        #hRight{
+            width: 360px;
+        }
+        #hRight ul{
+            list-style: none;
+            display: inline;
+        }
+        #hRight ul li{
+            display: inline;
+        }
+        #nav{
+            clear: both;
+        }
+        #nav a{
+            color: white;
+        }
+        #topNav{
+            font-size: 16px;
+            line-height: 36px;
+            text-align: center;
+            height: 36px;
+            background-image: url("./imges/top_1.gif");
+        }
+        #topNav ul li{
+            display: inline-block;
+            decoration: none;
+        }
+        #bottomNav{
+            text-indent: 30px;
+            height: 25px;
+            background-image: url("./imges/top_2.gif");
+        }
+        #middle{
+            height: 1200px;
+        }
+
+
+        #mLeft{
+            width: 195px;
+            height: 1200px;
+
+        }
+        #mLeft a{
+            color: black;
+            text-decoration: none;
+        }
+        #userInfo{
+            margin: 8px 2px;
+            border: solid #e34542 1px;
+        }
+        .userInfoB{
+            padding: 20px;
+            font-size: 13px;
+        }
+        .userInfoB ul li{
+            display: inline-block;
+            list-style: none;
+        }
+
+        #mLeft h4{
+            text-align: center;
+            background-image: url("./imges/la_4.gif");
+            color: white;
+        }
+
+        .userInfoM{
+            padding-left: 30px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-size: 13px;
+        }
+        .userInfoM ul li{
+            display: inline-block;
+            list-style: none;
+        }
+        #rBrand div{
+            text-align: center;
+        }
+        #rBrand ul li img{
+            display: inline-block;
+            width: 80px;
+            height: 45px;
+        }
+        #rBrand ul li{
+            display:inline-block;
+            list-style: none;
+            margin: 5px;
+        }
+
+        #mMiddle{
+            width: 582px;
+            height: 1200px;
+        }
+        #mRight{
+            width: 195px;
+            height: 1200px;
+        }
+
+        /* 中上轮播图 */
+        #show{
+            width: 580px;
+            height: 140px;
+        }
+        #imgs{
+            position: relative;
+            width: 580px;
+            height: 120px;
+            overflow: hidden;
+        }
+        #imgs img{
+            width: 580px;
+            height: 120px;
+            display: none;
+
+        }
+        #left{
+            float: left;
+            width: 380px;
+            height: 20px;
+            background-color: #f6f7f9;
+        }
+        #right a{
+            float: left;
+            display: inline-block;
+            text-decoration: none;
+            background-color:#cccccc;
+            color: black;
+            font-size: 13px;
+            padding: 1px;
+            width: 20px;
+            height: 15px;
+            text-align: center;
+        }
+        #right a:hover{
+            background-color: red;
+        }
+        #right a.active{
+            background-color: red;
+        }
+        #rC h4{
+            background-image: url(./imges/ca_1.gif);
+            margin: 5px;
+            text-indent: 20px;
+            color: white;
+        }
+        #rC ul{
+            display: inline-block;
+            list-style: none;
+            margin: 5px 20px;
+        }
+        #rC ul li{
+            display: inline-block;
+            list-style: none;
+        }
+        #rC ul li div{
+            text-align:center;
+            width: 100px;
+            color: #4a0000;
+            font-size: 13px;
+        }
+        #rC ul li div img{
+            width: 100px;
+            height: 100px;
+        }
+
+        #hSC h4{
+            background-image: url(./imges/ca_1.gif);
+            margin: 5px;
+            text-indent: 20px;
+            color: white;
+        }
+        #hSC ul{
+            display: inline-block;
+            list-style: none;
+            margin: 5px 20px;
+        }
+        #hSC ul li{
+            display: inline-block;
+            list-style: none;
+        }
+        #hSC ul li div{
+            text-align:center;
+            width: 100px;
+            color: #4a0000;
+            font-size: 13px;
+        }
+        #hSC ul li div img{
+            width: 100px;
+            height: 100px;
+        }
+
+        #gPC h4{
+            background-image: url(./imges/ca_1.gif);
+            margin: 5px;
+            text-indent: 20px;
+            color: white;
+        }
+        #gPC ul{
+            display: inline-block;
+            list-style: none;
+            margin: 5px 20px;
+        }
+        #gPC ul li{
+            display: inline-block;
+            list-style: none;
+        }
+        #gPC ul li div{
+            text-align:center;
+            width: 100px;
+            color: #4a0000;
+            font-size: 13px;
+        }
+        #gPC ul li div img{
+            width: 100px;
+            height: 100px;
+        }
+        #nC h4{
+            background-image: url(./imges/ca_1.gif);
+            margin: 5px;
+            text-indent: 20px;
+            color: white;
+        }
+        #nC ul{
+            display: inline-block;
+            list-style: none;
+            margin: 5px 20px;
+        }
+        #nC ul li{
+            display: inline-block;
+            list-style: none;
+        }
+        #nC ul li div{
+            text-align:center;
+            width: 100px;
+            color: #4a0000;
+            font-size: 13px;
+        }
+        #nC ul li div img{
+            width: 100px;
+            height: 100px;
+        }
+
+
+        #mRight #webNews{
+            margin: 8px auto;
+        }
+        #mRight #webNews h4{
+            background-image: url(./imges/la_7.gif);
+            text-align: center;
+            color: white;
+        }
+        #mRight #webNews ul{
+            padding: 5px;
+
+        }
+
+        #mRight #webNews li{
+            font-size: 13px;
+            padding: 5px;
+            list-style: none;
+        }
+        #mRight #webNews img{
+            margin-right: 5px;
+            margin-left: 5px;
+        }
+        #mRight #webNews{
+            margin: 8px auto;
+        }
+        #mRight #userService h4{
+            background-image: url(./imges/la_7.gif);
+            text-align: center;
+            color: white;
+        }
+        #mRight #userService ul{
+            padding: 5px;
+
+        }
+
+        #mRight #userService li{
+            font-size: 10px;
+            padding: 5px;
+            list-style: none;
+        }
+        #mRight #userService img{
+            margin-right: 5px;
+            margin-left: 5px;
+        }
+        #mRight #userService span{
+            margin-right: 5px;
+        }
+
+        #mRight #classifyRC h4{
+            background-image: url(./imges/la_7.gif);
+            text-align: center;
+            color: white;
+        }
+
+        #mRight #classifyRC li{
+            font-size: 10px;
+            list-style: none;
+            margin-top: 10px;
+        }
+
+        #mRight #classifyRC span{
+            margin-right: 5px;
+        }
+
+
+
+        #foot{
+            height: 300px;
+            clear: both;
+        }
+
+        #foot-top{
+            width: 968px;
+            height: 120px;
+            padding: 5px;
+        }
+
+        #foot-top h5{
+            color: #d6290b;
+        }
+
+        #foot-top div{
+            float: left;
+            width: 190px;
+            height: 120px;
+        }
+        #foot-top ul img{
+            margin: auto 5px;
+        }
+
+
+        #foot-top ul li{
+            list-style: none;
+            font-size: 13px;
+            padding: 2px;
+        }
+        #foot-bottom div{
+            text-align: center;
+        }
+
+        #foot-bottom ul{
+            display: inline;
+        }
+        #foot-bottom ul li{
+            list-style: none;
+            font-size: 13px;
+            display: inline;
+            margin-left: 10px;
+        }
+
+        .f{
+            float: left;
+        }
+

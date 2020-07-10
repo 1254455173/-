@@ -1,0 +1,29 @@
+.left{
+    float: left;
+}
+
+#userLogin{
+    margin: 80px;
+}
+
+#loginUp, #loginDown{
+    width: 615px;
+    height: 29px;
+}
+#loginMiddle{
+    width: 615px;
+    height: 80px;
+    overflow: hidden;
+    line-height: 30px;
+    background-color: #f9f9f9
+}
+#loginMidLeft{
+    margin-left: 20px;
+}
+#loginMidMid,  #loginMidRight{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+#loginMidRight input{
+    border: none;
+}
